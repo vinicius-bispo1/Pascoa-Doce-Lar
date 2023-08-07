@@ -108,7 +108,7 @@ export const Secondbox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: solid 1px green;
+  /* border: solid 1px green; */
 `;
 
 export const Endereco = styled.div`

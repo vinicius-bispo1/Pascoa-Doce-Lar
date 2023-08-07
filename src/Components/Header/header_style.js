@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import setadireita from "../imagem/setadireita.png";
-import setaesquerda from "../imagem/setaesquerda.png";
+
 
 export const Header = styled.header`
   display: flex;
@@ -40,12 +39,17 @@ export const NavBox = styled.nav`
     width: 48vw;
 
     padding: 0 45px 0 0;
-    li {
+    
+      
+    a{
+      text-decoration: none;
       cursor: pointer;
       font-size: 20px;
       font-family: "inter", sans-serif;
       font-weight: 400;
-    }
+      color: orange;
+      }
+    
     p {
       text-decoration: underline white;
       font-family: "inter", sans-serif;
@@ -57,46 +61,25 @@ export const NavBox = styled.nav`
 `;
 
 export const Section = styled.section`
-  height: 120vh;
+  height: 123vh;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-
+  /* border: solid 1px yellow; */
   p {
     font-size: 55px;
-    width: 32vw;
+    width: 38vw;
     position: relative;
     bottom: 8vh;
     left: 10vw;
     color: white;
     font-family: "inter", sans-serif;
     font-weight: 700;
+    /* border: solid yellow; */
   }
 `;
 
-export const ButtonBox = styled.div`
-  display: flex;
-  width: 100%;
-  height: 10vh;
-  justify-content: space-between;
-  align-items: center;
-`;
 
-export const BE = styled.div`
-  background-image: url(${setadireita});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #f2b705;
-  height: 10vh;
-  width: 4vw;
-`;
 
-export const BD = styled.div`
-  background-image: url(${setaesquerda});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #f2b705;
-  height: 10vh;
-  width: 4vw;
-`;
+

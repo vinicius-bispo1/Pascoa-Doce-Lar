@@ -12,18 +12,14 @@ export default function Header() {
         </div>
         <S.NavBox>
           <ul>
-            <p>PRODUTOS</p>
-            <li>ONDE ENCONTRAR</li>
-            <li>CONTATO</li>
+            <p><a href="#main">PRODUTOS</a></p>
+            <li><a href="#local">ONDE ENCONTRAR</a></li>
+            <li><a href="#contato">CONTATO</a></li>
           </ul>
         </S.NavBox>
       </S.Header>
       <S.Section>
         <p>Cada produto feito artesanalmente</p>
-        <S.ButtonBox>
-          <S.BD></S.BD>
-          <S.BE></S.BE>
-        </S.ButtonBox>
       </S.Section>
     </>
   );

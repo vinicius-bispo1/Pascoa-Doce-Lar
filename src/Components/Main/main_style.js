@@ -14,6 +14,7 @@ export const Main = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid gray; */
 `;
 
 export const Span = styled.span`
@@ -34,6 +35,10 @@ export const Span = styled.span`
     color: white;
     font-family: "inter", sans-serif;
     font-size: 15px;
+    @media (max-width: 860px) {
+      font-size: 11px;
+      width: 11vw;
+    }
   }
 `;
 
@@ -49,7 +54,16 @@ export const Opçoes = styled.div`
     width: 12.7vw;
     height: 6vh;
     font-family: "inter", sans-serif;
+    @media (max-width: 860px) {
+      font-size: 15px;
+    }
   }
+  img{
+      width: 16vw;
+      @media (max-width: 860px) {
+      width: 14vw;  
+    }
+    }
 
   button {
     width: 8vw;
@@ -60,6 +74,20 @@ export const Opçoes = styled.div`
     font-weight: bolder;
     font-family: "inter", sans-serif;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @media (max-width: 1220px) {
+      width: 9vw;
+      font-size: 12px; 
+    }
+    @media (max-width: 860px) {
+      width: 10vw;
+      font-size: 11px; 
+    }
+    img{
+      width: 1vw;
+    }
   }
 `;
 
@@ -80,6 +108,7 @@ export const Secondbox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  border: solid 1px green;
 `;
 
 export const Endereco = styled.div`

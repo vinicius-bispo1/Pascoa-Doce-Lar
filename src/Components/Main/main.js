@@ -9,26 +9,27 @@ import Ovo6 from "../imagem/ovo6.png";
 import open from "../imagem/open.png";
 import copacabana from "../imagem/copacabana.png";
 import vila from "../imagem/vila.png";
-import { useState } from "react";
+import what from "../imagem/what.png";
+
 
 export default function Main() {
-  const [par, setPar] = useState(0);
+  
 
   return (
     <>
-      <S.Main>
+      <S.Main id="main">
         <S.Ovos>
           <S.Opçoes>
             <img src={Ovo1} alt="imagem de ovo de pascoa" />
             <p>Ovos de colher Tradicional a partir de 250g</p>
-            <button>COMPRAR</button>
+            <button>Encomendar<img src={what} alt="icone do logo do whatsapp"/></button>
           </S.Opçoes>
           <S.Span>
             <span> 10% de desconto</span>
             <S.Opçoes>
               <img src={Ovo2} alt="imagem de ovo de pascoa" />
               <p>Ovos de colher Especiais a partir de 350g</p>
-              <button>COMPRAR</button>
+              <button>Encomendar<img src={what} alt="icone do logo do whatsapp"/></button>
             </S.Opçoes>
           </S.Span>
           <S.Span>
@@ -36,7 +37,7 @@ export default function Main() {
             <S.Opçoes>
               <img src={Ovo3} alt="imagem de ovo de pascoa" />
               <p> Cesta de Chocolate monte você mesmo.</p>
-              <button>COMPRAR</button>
+              <button>Encomendar<img src={what} alt="icone do logo do whatsapp"/></button>
             </S.Opçoes>
           </S.Span>
           <S.Span>
@@ -44,23 +45,23 @@ export default function Main() {
             <S.Opçoes>
               <img src={Ovo4} alt="imagem de ovo de pascoa" />
               <p> Ovos coloridos para brincar com a criançada.</p>
-              <button>COMPRAR</button>
+              <button>Encomendar<img src={what} alt="icone do logo do whatsapp"/></button>
             </S.Opçoes>
           </S.Span>
           <S.Opçoes>
             <img src={Ovo5} alt="imagem de ovo de pascoa" />
             <p> Kit de Trufas a partir de 12 unidades </p>
-            <button>COMPRAR</button>
+            <button>Encomendar<img src={what} alt="icone do logo do whatsapp"/></button>
           </S.Opçoes>
           <S.Opçoes>
             <img src={Ovo6} alt="imagem de ovo de pascoa" />
             <p> Barra de Chocolate crocontes</p>
-            <button>COMPRAR</button>
+            <button>Encomendar<img src={what} alt="icone do logo do whatsapp"/></button>
           </S.Opçoes>
         </S.Ovos>
       </S.Main>
 
-      <S.Secondbox>
+      <S.Secondbox id="local">
         <S.Endereco>
           <img src={open} alt="imagem de ovo de pascoa" />
           <h3>LARANJEIRAS</h3>
@@ -89,7 +90,7 @@ export default function Main() {
         </S.Endereco>
       </S.Secondbox>
 
-      <S.Boxform>
+      <S.Boxform id="contato">
         <p>Contato</p>
         <input id="name" type="text" name="name" placeholder="Nome" required />
         <S.Boxinput>

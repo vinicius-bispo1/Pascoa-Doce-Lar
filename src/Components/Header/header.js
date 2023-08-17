@@ -17,6 +17,16 @@ export default function Header() {
             <li><a href="#contato">CONTATO</a></li>
           </ul>
         </S.NavBox>
+        <S.Hamburg>
+        <div className="dropdown">
+         <a className="fa" href="#">&#8801;</a>
+            <div className="dropdown-content">
+              <a href="#main">PRODUTOS</a>
+              <a href="#local">ONDE ENCONTRAR</a>
+              <a href="#contato">CONTATO</a>
+            </div>
+            </div>
+          </S.Hamburg>
       </S.Header>
       <S.Section>
         <p>Cada produto feito artesanalmente</p>

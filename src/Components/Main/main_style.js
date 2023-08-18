@@ -14,30 +14,35 @@ export const Main = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid gray; */
+  @media (max-width: 1080px) {
+    height: 185vh;
+  }
+  @media (max-width: 915px) {
+    height: 185vh;
+  }
   @media (max-width: 790px) {
     height: 380vh;
-    /* border: 1px solid gray; */
     align-items: start;
   }
 `;
 
 export const Span = styled.span`
-  /* border: 1px solid gray; */
   width: 18vw;
   height: 51vh;
   margin-bottom: 23px;
-  @media (max-width: 790px) {
-      /* display: none; */
+  @media (max-width: 1080px) {
+    width: 22vw;
+    }
+    @media (max-width: 915px) {
+    width: 25vw;
+    }
+  @media (max-width: 790px) {   
       font-size: 11px;
-      width: 65vw;
-     
-      /* flex-direction: column; */
+      width: 65vw; 
       align-items: center;
       justify-content: space-evenly;  
     }
   span {
-    /* border: 1px solid orange; */
     border-radius: 10px 10px 0 0;
     margin-left: 1vw;
     width: 9.8vw;
@@ -49,14 +54,19 @@ export const Span = styled.span`
     color: white;
     font-family: "inter", sans-serif;
     font-size: 15px;
+    @media (max-width: 1287px) {
+      font-size: 12px;
+  }
+  @media (max-width: 915px) {
+    width: 13vw;
+    font-size: 11px;
+    }
     @media (max-width: 790px) {
-      
       font-size: 12px;
       width: 30vw;
       align-items: center;
-      justify-content: space-evenly;
-      
-      
+      justify-content: space-evenly; 
+      margin-left: 3vw; 
     }
   }
 `;
@@ -69,6 +79,12 @@ export const Opçoes = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  @media (max-width: 1080px) {
+    width: 22vw;
+    }
+    @media (max-width: 915px) {
+    width: 25vw;
+    }
   @media (max-width: 790px) {
     border: 1px solid gray;
     width: 65vw;
@@ -78,16 +94,25 @@ export const Opçoes = styled.div`
     width: 12.7vw;
     height: 6vh;
     font-family: "inter", sans-serif;
+    @media (max-width: 1287px) {
+      font-size: 0.8em;
+  }
+  @media (max-width: 915px) {
+      font-size: 0.7em;
+      width: 15vw;
+  }
     @media (max-width: 790px) {
       flex-direction: row;
       width: 45vw;
       height: 5vh;
       font-size: 3.7vw;
-      
     }
   }
   img{
       width: 16vw;
+      @media (max-width: 1080px) {
+      width: 19vw;  
+    }
       @media (max-width: 790px) {
       width: 55vw;  
     }
@@ -105,9 +130,14 @@ export const Opçoes = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    @media (max-width: 1220px) {
-      width: 9vw;
-      font-size: 12px; 
+
+    @media (max-width: 1287px) {
+      width: 8vw;
+      font-size: 10px;   
+    }
+    @media (max-width: 915px) {
+      width: 10vw;
+      font-size: 11px;   
     }
     @media (max-width: 790px) {
       width: 25vw;
@@ -115,6 +145,12 @@ export const Opçoes = styled.div`
     }
     img{
       width: 1.2vw;
+      @media (max-width: 1287px) {
+        width: 1vw;
+    }
+    @media (max-width: 915px) {
+      width: 1.2vw;
+    }
       @media (max-width: 790px) {
         width: 3.5vw;
     }
@@ -131,6 +167,14 @@ export const Ovos = styled.div`
   flex-wrap: wrap;
   gap: 90px;
   
+  @media (max-width: 1080px) {
+    height: 180vh;
+    gap: 60px;
+  }
+  @media (max-width: 915px) {
+    height: 180vh;
+    width: 78vw;
+  }
   @media (max-width: 790px) {
     width: 100%;
     height: 380vh;
@@ -138,7 +182,6 @@ export const Ovos = styled.div`
       justify-content: space-around;
       gap: 0px;
       flex-wrap: nowrap;
-      /* border: 1px solid yellow; */
   }
 `;
 
@@ -149,7 +192,9 @@ export const Secondbox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* border: solid 1px green; */
+  @media (max-width: 1287px) {
+    height: 85vh;
+  }
   @media (max-width: 790px) {
     display: flex;
     flex-direction: column;
@@ -159,19 +204,24 @@ export const Secondbox = styled.div`
 `;
 
 export const Endereco = styled.div`
-  width: 22vw;
+  width: 20vw;
   height: 68vh;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  @media (max-width: 1287px) {
+    width: 20vw;
+    height: 68vh;
+    img{
+      width: 20vw;
+    }
+  }
   @media (max-width: 790px) {
     width: 90vw;
     height: 65vh;
     background-color: #6E3A30;
-    
-
     img{
       width: 60vw;
     }
@@ -181,9 +231,11 @@ export const Endereco = styled.div`
     font-size: 22px;
     font-family: "inter", sans-serif;
     font-weight: 600;
+    @media (max-width: 1287px) {
+      font-size: 18px; 
+  }
     @media (max-width: 790px) {
-      font-size: 18px;
-      
+      font-size: 18px;   
   }
   }
   p {
@@ -196,6 +248,9 @@ export const Endereco = styled.div`
     text-align: center;
     justify-content: center;
     font-family: "inter", sans-serif;
+    @media (max-width: 1287px) {
+      font-size: 13px;
+  }
     @media (max-width: 790px) {
       font-size: 13px;
       width: 40vw;
@@ -207,6 +262,9 @@ export const Endereco = styled.div`
     font-size: 20px;
     font-weight: 500;
     text-align: center;
+    @media (max-width: 1287px) {
+      font-size: 13px;
+  }
     @media (max-width: 790px) {
       width: 60vw;
       font-size: 15px;
@@ -222,6 +280,9 @@ export const Endereco = styled.div`
     text-align: center;
     justify-content: center;
     font-family: "inter", sans-serif;
+    @media (max-width: 1287px) {
+      font-size: 13px;
+  }
     @media (max-width: 790px) {
       width: 35vw;
       font-size: 15px;
@@ -246,6 +307,12 @@ export const Boxform = styled.div`
     color: #f2b705;
     font-family: "inter", sans-serif;
     margin-bottom: 50px;
+    @media (max-width: 1080px) {
+      
+  }
+  @media (max-width: 790px) {
+    font-size: 36px;
+  }
   }
   input {
     width: 51.5vw;
@@ -257,6 +324,9 @@ export const Boxform = styled.div`
     font-weight: 500;
     font-size: 18px;
     outline: none;
+    @media (max-width: 1080px) {
+      
+  }
     @media (max-width: 790px) {
       width: 80vw;
       height: 7vh;
@@ -276,6 +346,9 @@ export const Boxform = styled.div`
     cursor: pointer;
     letter-spacing: 1px;
     box-shadow: 0 6px 3px -2px gray;
+    @media (max-width: 1080px) {
+      
+  }
     @media (max-width: 790px) {
       margin-top: 48px;
       width: 29vw;
@@ -287,8 +360,10 @@ export const Boxform = styled.div`
     padding-bottom: 90px;
     text-align: justify;
     text-justify: inter-word;
-    @media (max-width: 790px) {
+    @media (max-width: 1080px) {
       
+  }
+    @media (max-width: 790px) {
       height: 18vh;
       padding-bottom: 70px;
   }
@@ -301,6 +376,10 @@ export const Boxinput = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 1080px) {
+      
+      
+  }
   @media (max-width: 790px) {
       
       display: flex;
@@ -314,6 +393,9 @@ export const Boxinput = styled.div`
     width: 24.7vw;
     border: 1px solid #f2b705;
     padding-left: 20px;
+    @media (max-width: 1080px) {
+      
+  }
     @media (max-width: 790px) {
       width: 80vw;
       height: 20vh;

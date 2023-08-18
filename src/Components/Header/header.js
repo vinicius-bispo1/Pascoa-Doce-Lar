@@ -12,7 +12,7 @@ export default function Header() {
         </div>
         <S.NavBox>
           <ul>
-            <p><a href="#main">PRODUTOS</a></p>
+            <li><a className="linha" href="#main">PRODUTOS</a></li>
             <li><a href="#local">ONDE ENCONTRAR</a></li>
             <li><a href="#contato">CONTATO</a></li>
           </ul>

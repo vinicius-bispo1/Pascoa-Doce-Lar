@@ -7,7 +7,9 @@ export const Header = styled.header`
   position: sticky;
   top: 0px;
   z-index: 1;
-  /* border: solid 1px black; */
+  @media (max-width: 1287px) {
+  }
+  
   @media (max-width: 790px) {
     display: flex;
     justify-content: space-between;
@@ -20,6 +22,12 @@ export const Header = styled.header`
     align-items: center;
     justify-content: space-around;
     background-color: white;
+    @media (max-width: 1287px) {     
+      width: 19vw;
+  }
+  @media (max-width: 915px) {      
+      width: 23vw;
+  }
     @media (max-width: 790px) {
       width: 43vw;
       height: 5%.9;
@@ -30,12 +38,22 @@ export const Header = styled.header`
     font-size: 2em;
     color: #f2b705;
     font-family: "Righteous", sans-serif;
+    @media (max-width: 1080px) {  
+  }
+  @media (max-width: 915px) {
+    font-size: 1.8em; 
+  }
     @media (max-width: 790px) {
       font-size: 1.5em; 
   }
   }
   img {
     width: 3.5vw;
+    @media (max-width: 1080px) {
+  }
+  @media (max-width: 915px) {
+    width: 3.3vw;
+  }
     @media (max-width: 790px) {
       width: 6.5vw;
   }
@@ -46,6 +64,9 @@ export const NavBox = styled.nav`
   justify-content: flex-end;
   width: 84vw;
   background-color: rgba(0, 0, 0, 0.3);
+  @media (max-width: 1080px) {
+  }
+  
   @media (max-width: 790px) {
     display: none;
   }
@@ -58,6 +79,11 @@ export const NavBox = styled.nav`
     font-size: 1.5em;
     width: 48vw;
     padding: 0 45px 0 0;
+    @media (max-width: 1080px) {
+    display: flex;
+    align-items: center;
+    width: 51vw;
+  }
     
     a{
       text-decoration: none;
@@ -66,14 +92,26 @@ export const NavBox = styled.nav`
       font-family: "inter", sans-serif;
       font-weight: 400;
       color: orange;
+      @media (max-width: 1080px) {
+      font-size: 16px;
+      height: 5vh;
+  }
       }
     
-    p {
+    .linha {
       text-decoration: underline white;
       font-family: "inter", sans-serif;
       cursor: pointer;
       font-weight: 700;
       font-size: 20px;
+      @media (max-width: 1080px) {
+      text-decoration: none;
+      font-size: 16px;
+      height: 4vh;
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+  }
     }
   }
 `;
@@ -84,10 +122,15 @@ export const Section = styled.section`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* border: solid 1px yellow; */
+  @media (max-width: 1080px) {
+    height: 95vh;
+  }
+  @media (max-width: 915px) {
+    height: 78vh;
+    
+  }
   @media (max-width: 790px) {
     height: 78.5vh;
-   
   }
   p {
     font-size: 55px;
@@ -98,7 +141,16 @@ export const Section = styled.section`
     color: white;
     font-family: "inter", sans-serif;
     font-weight: 700;
-    /* border: solid yellow; */
+    @media (max-width: 1287px) {
+      width: 55vw;
+      font-size: 50px;
+  }
+  @media (max-width: 1080px) {
+    font-size: 42px;
+  }
+  @media (max-width: 915px) {
+    font-size: 36px;
+  }
     @media (max-width: 790px) {
       font-size: 1.3em;
       width: 85vw;
@@ -112,11 +164,12 @@ export const Section = styled.section`
 `;
 
 export const Hamburg = styled.section`
-/* display:none; */
-
 .dropdown {
   display:none;
       }
+      @media (max-width: 1080px) {
+
+  }   
 
  @media (max-width: 790px) {
 .fa {
@@ -131,7 +184,6 @@ export const Hamburg = styled.section`
         align-items: center;
         font-size: 9vw;
         text-decoration: none; 
-        /* border: 1px solid grey; */
     }
       
       .dropdown {
@@ -140,7 +192,6 @@ export const Hamburg = styled.section`
         cursor: pointer;
         width: 30vw;
         height: 6vh;
-        /* border: 1px solid green; */
         background-color: rgba(0, 0, 0, 0.1);
       }
       
@@ -149,11 +200,9 @@ export const Hamburg = styled.section`
         width: 1vw;
         height: 1vh;
         position: absolute;
-        /* border: 1px solid red; */
         background-color: rgba(0, 0, 0, 0);
         top: 6vh;
         left: 0vw;
-        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
       }
       
       .dropdown-content a {
@@ -165,12 +214,9 @@ export const Hamburg = styled.section`
         font-size: 0.6em;
         display: flex;
         align-items: center;
-        /* background-color: white; */
         justify-content: center;
         position: relative;
         background-color: rgba(0, 0, 0, 0.3);
-        /* border: 1px solid orange; */
-        
       }
       
       .dropdown-content a:hover {color: gray;}
